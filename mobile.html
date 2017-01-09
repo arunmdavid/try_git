@@ -1,2 +1,7 @@
-<a href='scripblog://common/open-app'>scripblog://common/open-app</a>
-Test
+Test page
+<script>
+  window.postMessage('test');
+  window.onMessage = function (data) {
+    alert(data);
+  }
+</script>
